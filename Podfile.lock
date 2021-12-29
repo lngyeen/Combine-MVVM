@@ -1,0 +1,28 @@
+PODS:
+  - Kingfisher (7.1.2)
+  - MBProgressHUD (1.2.0)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+
+DEPENDENCIES:
+  - Kingfisher
+  - MBProgressHUD (~> 1.2.0)
+  - Reusable
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - MBProgressHUD
+    - Reusable
+
+SPEC CHECKSUMS:
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+
+PODFILE CHECKSUM: aecfb7220bc3cb463ebf9ef6c37adde6c751155c
+
+COCOAPODS: 1.11.2

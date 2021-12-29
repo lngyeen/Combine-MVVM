@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="4be-Ua-XAr" customClass="MusicCell" customModule="Combine_MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4be-Ua-XAr" id="9hs-jI-mDO">
+                <rect key="frame" x="0.0" y="0.0" width="303" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cOU-HE-KXJ">
+                        <rect key="frame" x="5" y="5" width="90" height="70"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="Dla-CB-QgP"/>
+                            <constraint firstAttribute="height" constant="70" id="Uvc-nv-Q1R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwA-G5-c7u">
+                        <rect key="frame" x="100" y="5" width="143" height="36"/>
+                        <string key="text">Certified Lover Boy
+Drake</string>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGS-ub-c7Q">
+                        <rect key="frame" x="100" y="46" width="143" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvh-ex-DWW">
+                        <rect key="frame" x="236" y="26.5" width="59" height="28"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="11"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="likeButtonTap:" destination="4be-Ua-XAr" eventType="touchUpInside" id="JHQ-4f-2Bi"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="Zvh-ex-DWW" firstAttribute="centerY" secondItem="9hs-jI-mDO" secondAttribute="centerY" id="3j9-f3-KVT"/>
+                    <constraint firstItem="BGS-ub-c7Q" firstAttribute="leading" secondItem="cOU-HE-KXJ" secondAttribute="trailing" constant="5" id="8jS-xg-wUH"/>
+                    <constraint firstAttribute="trailing" secondItem="Zvh-ex-DWW" secondAttribute="trailing" constant="8" id="Gtg-MY-Abl"/>
+                    <constraint firstAttribute="bottom" secondItem="cOU-HE-KXJ" secondAttribute="bottom" priority="750" constant="5" id="H2p-gj-NL5"/>
+                    <constraint firstAttribute="trailing" secondItem="QwA-G5-c7u" secondAttribute="trailing" constant="60" id="WRQ-tW-TYg"/>
+                    <constraint firstItem="QwA-G5-c7u" firstAttribute="leading" secondItem="cOU-HE-KXJ" secondAttribute="trailing" constant="5" id="WX7-Ac-0eB"/>
+                    <constraint firstItem="cOU-HE-KXJ" firstAttribute="top" secondItem="9hs-jI-mDO" secondAttribute="top" constant="5" id="exG-DX-5J0"/>
+                    <constraint firstItem="cOU-HE-KXJ" firstAttribute="leading" secondItem="9hs-jI-mDO" secondAttribute="leading" constant="5" id="fCS-ly-2dj"/>
+                    <constraint firstItem="BGS-ub-c7Q" firstAttribute="trailing" secondItem="QwA-G5-c7u" secondAttribute="trailing" id="h1Y-xA-hXZ"/>
+                    <constraint firstItem="QwA-G5-c7u" firstAttribute="top" secondItem="9hs-jI-mDO" secondAttribute="top" constant="5" id="lZV-Oj-hon"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BGS-ub-c7Q" secondAttribute="bottom" constant="5" id="tnu-fR-Gnn"/>
+                    <constraint firstItem="BGS-ub-c7Q" firstAttribute="top" secondItem="QwA-G5-c7u" secondAttribute="bottom" constant="5" id="zBo-B4-fIv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="uAr-6l-0VV"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <connections>
+                <outlet property="artistNameLabel" destination="BGS-ub-c7Q" id="JRU-dW-yjK"/>
+                <outlet property="likeButton" destination="Zvh-ex-DWW" id="Qdf-SH-KVg"/>
+                <outlet property="nameLabel" destination="QwA-G5-c7u" id="L7c-Wa-V5v"/>
+                <outlet property="thumbnailImageView" destination="cOU-HE-KXJ" id="bTf-a9-X4G"/>
+            </connections>
+            <point key="canvasLocation" x="125.36231884057972" y="62.611607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
